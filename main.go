@@ -9,5 +9,10 @@ func main() {
 			"message": "pong",
 		})
 	})
-	r.Ru n(":80") // listen and serve on 0.0.0.0:8080
+
+	err := r.Ru n(":80")
+	if err != nil {
+		return
+	} // listen and serve on 0.0.0.0:8080
+
 }
