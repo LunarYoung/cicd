@@ -11,7 +11,7 @@ import (
 var _ = Describe("b E2E test", func() {
 	Context("when ", Ordered, func() {
 		It("测试,返回200", func() {
-			url := fmt.Sprintf("%sping", "http://localhost/")
+			url := fmt.Sprintf("%sping", "http://127.0.0.1/")
 			resp, err := resty.New().R().
 				Get(url)
 			Expect(err).To(BeNil())
