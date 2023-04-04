@@ -11,6 +11,6 @@ func main() {
 	})
 	err := r.Run(":80")
 	if err != nil {
-		re turn
+		return
 	} // listen and serve on 0.0.0.0:8080
 }
