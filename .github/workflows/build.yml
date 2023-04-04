@@ -11,7 +11,7 @@ defaults:
 jobs:
   build:
     name: build main.go
-    runs-on: [ self-hosted ]
+    runs-on: [ ubuntu-latest ]
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-go@v3
