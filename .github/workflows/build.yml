@@ -22,10 +22,6 @@ jobs:
         run: |
           go mod tidy
           go build main.go
-
-  build1:
-    name: test
-    runs-on: [ ubuntu-latest ]
-    steps:
-      - name: test
-        run:  go test  ./...
+          go test  ./...
+        
+  
