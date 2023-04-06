@@ -23,5 +23,6 @@ jobs:
         run: |
           go mod tidy
           go build main.go
-#      - name: test
-#        run: go test -v -tags unit_test ./...
+          go run main.go
+      - name: test
+        run: go test  ./...
