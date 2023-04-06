@@ -4,7 +4,9 @@ on:
     branches:
       - main
 
-
+defaults:
+  run:
+    shell: bash
 
 jobs:
   build:
