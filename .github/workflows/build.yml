@@ -24,8 +24,8 @@ jobs:
           go build main.go
 
   build1:
-    name: build main.go
+    name: test
     runs-on: [ ubuntu-latest ]
     steps:
       - name: test
-        run: go test  ./...
+        run:  go test -v -tags unit_test ./...
